@@ -14,10 +14,6 @@ export default defineConfig({
       "/auth": {
         target: "http://localhost:5000/api", // Rewrite needed if frontend doesn't use /api prefix
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\//, '/'), // Keep as is if server handles /auth? No, server handles /api/auth
-        // Wait, server.js has app.post('/api/auth/register')
-        // Frontend calls '/auth/register'
-        // So I need to rewrite '/auth' -> '/api/auth'
         rewrite: (path) => '/api' + path
       },
       "/users": {
