@@ -25,7 +25,7 @@ const Login = () => {
     }
 
     try {
-      const res = await request.post("/auth/login", form);
+      const res = await request.post(`${import.meta.env.VITE_API_URL}/auth/login`, form);
 
       if (res.data?.token) {
         Cookies.set("TOKEN", res.data.token, { expires: 7 });
