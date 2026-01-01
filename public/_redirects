@@ -1,6 +1,6 @@
-/auth/*        https://pro-investor-2.onrender.com/auth/:splat        200!
-/users/*       https://pro-investor-2.onrender.com/users/:splat       200!
-/accounts/*    https://pro-investor-2.onrender.com/accounts/:splat    200!
-/operations/*  https://pro-investor-2.onrender.com/operations/:splat  200!
+/auth/*        https://pro-investor-2.onrender.com/auth/:splat        200
+/users/*       https://pro-investor-2.onrender.com/users/:splat       200
+/accounts/*    https://pro-investor-2.onrender.com/accounts/:splat    200
+/operations/*  https://pro-investor-2.onrender.com/operations/:splat  200
 
-/*   /index.html   200
+/*             /index.html                                          200
